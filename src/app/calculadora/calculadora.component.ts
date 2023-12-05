@@ -38,8 +38,13 @@ export class CalculadoraComponent {
       this.resultado = this.numero1 / this.numero2;
     }
 
+  }
 
-
+  limpiarNumeros() {
+    // alert("Limpiar numeros");
+    this.numero1 = 0;
+    this.numero2 = 0;
+    this.resultado = 0;
   }
 
 }
