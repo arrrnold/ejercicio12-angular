@@ -16,7 +16,8 @@ export class CalculadoraComponent {
 
   sumarNumeros() {
     // alert("Suma de numeros");
-    this.resultado = this.numero1 + this.numero2;
+    // sumar numeros
+    this.resultado = +this.numero1 + +this.numero2;
   }
 
   restarNumeros() {

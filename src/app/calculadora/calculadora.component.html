@@ -1,45 +1,47 @@
 <div class="container">
-    <h1>Calculadora básica</h1>
-    <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Ingrese el número 1</label>
-                    <input [(ngModel)]="numero1" type="email" class="form-control" id="exampleFormControlInput1" placeholder="0">
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Ingrese el número 2</label>
-                    <input [(ngModel)]="numero2" type="email" class="form-control" id="exampleFormControlInput1" placeholder="0">
-                </div>
-            </div>
+  <h1>Calculadora básica</h1>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Ingrese el número 1</label>
+          <input [(ngModel)]="numero1" type="email" class="form-control" id="exampleFormControlInput1" placeholder="0">
         </div>
-        <div class="row">
-            <div class="col">
-                Resultado: {{resultado}}
-            </div>
+      </div>
+      <div class="col">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Ingrese el número 2</label>
+          <input [(ngModel)]="numero2" type="email" class="form-control" id="exampleFormControlInput2" placeholder="0">
         </div>
-        <div class="row">
-            <div class="col">
-                <div class="mb-3">
-                    <button type="button" class="btn btn-primary" (click)="sumarNumeros()">Sumar</button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <button type="button" class="btn btn-danger" (click)="restarNumeros()">Restar</button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <button type="button" class="btn btn-info" (click)="dividirNumeros()">Dividir</button>
-                </div>
-            </div>
-            <div class="col">
-                <div class="mb-3">
-                    <button type="button" class="btn btn-warning" (click)="multiplicarNumeros()">Multiplicar</button>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="row">
+      <div class="col"
+        style="margin-bottom: 20px;"
+      >
+        Resultado: {{resultado}}
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="mb-3">
+          <button type="button" class="btn btn-primary" (click)="sumarNumeros()">Sumar</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mb-3">
+          <button type="button" class="btn btn-danger" (click)="restarNumeros()">Restar</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mb-3">
+          <button type="button" class="btn btn-info" (click)="dividirNumeros()">Dividir</button>
+        </div>
+      </div>
+      <div class="col">
+        <div class="mb-3">
+          <button type="button" class="btn btn-warning" (click)="multiplicarNumeros()">Multiplicar</button>
+        </div>
+      </div>
+    </div>
+  </div>
